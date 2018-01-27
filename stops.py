@@ -54,7 +54,7 @@ words = dnyaneshwari_words
 words = words + haripath_words
 fdist = FreqDist(words)
 common_words = fdist.most_common(100)
-f = open('/home/mahesh/Mahesh/marathi_text_wikisource/stops_words.txt', 'a+')
+f = open('./stops_words.txt', 'a+')
 cw_list = [x[0] for x in common_words]
 common_words = '\n'.join(cw_list)
 print(common_words)
